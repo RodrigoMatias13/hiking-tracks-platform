@@ -15,29 +15,42 @@ Trabalho desenvolvido no âmbito da unidade curricular de **Desenvolvimento para
 *   **Moderação de Conteúdo:** Painel dedicado para Moderadores gerirem os comentários da comunidade e garantirem o bom ambiente da plataforma[cite: 5].
 *   **Gestão Administrativa:** Controlo total por parte dos Administradores para adicionar, editar ou remover trilhos e gerir contas de utilizadores[cite: 5].
 
-### Configurações Iniciais
+## 🚀 Como Executar
 
-Na pasta principal
+### 1. Configurações Iniciais
+*(Passo necessário apenas na primeira inicialização para criar o ambiente virtual e popular a base de dados)*
+
+Abra o terminal na pasta principal do projeto e execute:
 ```bash
-- .\venv\Scripts\Activate.ps1
-- python manage.py migrate
-- python seed_db.py
+# Ativar o ambiente virtual (Windows)
+.\venv\Scripts\Activate.ps1
 ```
-### Para correr backend
-
-Na pasta principal:
+# Executar as migrações da base de dados
 ```bash
-- python manage.py runserver
+python manage.py migrate
+```
+# Popular a base de dados com dados de teste (Seed)
+```bash
+python seed_db.py
 ```
 
-### Para correr frontend
+2. Iniciar o Backend (Django)
 
-Na pasta frontend:
+Na pasta principal do projeto, execute:
+```bash
+python manage.py runserver
+```
+O servidor ficará ativo em http://127.0.0.1:8000/.
+
+3. Iniciar o Frontend (React)
+Abra um novo terminal, navegue até à pasta frontend e execute:
 ```bash
 - npm run dev
 ```
+A interface gráfica ficará disponível no endereço indicado pelo terminal (geralmente http://localhost:5173/).
 
-### Contas já existentes, para testar
+🔑 Contas de Teste (Credenciais)
+Para testar as diferentes permissões, funcionalidades e painéis do site, utilize as seguintes contas previamente populadas na base de dados[cite: 5]:
 ```bash
 | CONTA         | USERNAME | PASSWORD |
 | -----         | -------- | -------- |

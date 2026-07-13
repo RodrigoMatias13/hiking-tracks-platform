@@ -16,22 +16,29 @@ Trabalho desenvolvido no âmbito da unidade curricular de **Desenvolvimento para
 *   **Gestão Administrativa:** Controlo total por parte dos Administradores para adicionar, editar ou remover trilhos e gerir contas de utilizadores[cite: 5].
 
 ### Configurações Iniciais
+
 Na pasta principal
+```bash
 - .\venv\Scripts\Activate.ps1
 - python manage.py migrate
 - python seed_db.py
-
+```
 ### Para correr backend
-Na pasta principal:
-- python manage.py runserver
 
+Na pasta principal:
+```bash
+- python manage.py runserver
+```
 
 ### Para correr frontend
-Na pasta frontend:
-- npm run dev
 
+Na pasta frontend:
+```bash
+- npm run dev
+```
 
 ### Contas já existentes, para testar
+```bash
 | CONTA         | USERNAME | PASSWORD |
 | -----         | -------- | -------- |
 | Administrador | admin    | admin    |
@@ -40,3 +47,7 @@ Na pasta frontend:
 | Moderador     | mod3     | mod3     |
 | Utilizador    | user1    | user1    |
 | Utilizador    | user2    | user2    |
+```
+
+## 👤 Autor
+* Rodrigo Matias

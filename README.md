@@ -1,5 +1,3 @@
-# hiking-tracks-platform
-
 # TrailGuide - Plataforma Web de Trilhos (Django & React) 🥾🗺️
 
 Este projeto consiste no desenvolvimento de uma aplicação web interativa e *fullstack* concebida para entusiastas de caminhadas e atividades ao ar livre. A plataforma funciona como um guia digital onde os utilizadores podem explorar trilhos, consultar informações detalhadas e interagir com a comunidade[cite: 5].
